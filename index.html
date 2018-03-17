@@ -2,15 +2,44 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>David Kraft’s Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <title>About Me | David Kraft’s Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- reset.css resets all browser defaults for uniformity across browsers and platforms --><link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
-    <heading>
-        <H1>David Kraft’s Portfolio</H1>
-    </heading>
+    <header>
+        <nav><!-- Define container width 960px; center enclosed content. Not applied to header because the header needs the white background which is outside of the container. -->
+            <div class="name">
+                <h1><!-- color:#ffffff; font-family: 'Georgia', Times, Times New Roman, serif; background-color:#64a8a4-->David Kraft</h1>
+            </div>
+            <ul> <!-- see https://www.jackreichert.com/2011/07/how-to-add-a-divider-between-menu-items-in-css-using-only-one-selector/ for instructions -->
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="container"><!-- Define article width 960px; center enclosed content. -->
+        <div class="content"><!-- Use this to create padding all around the page-specific content -->
+            <h1>About Me</h1>
+            <img style="float: left; margin: 0 15px 15px 0;" src="assets/images/david-kraft-profile.jpg" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nulla lacus. Sed eget est luctus, interdum sapien ac, mollis erat. Nulla eget lectus tortor. Donec a finibus sem. Sed consequat, magna vel rutrum vestibulum, purus arcu maximus mi, quis egestas justo nunc ut odio. Sed non sollicitudin nulla, id scelerisque nibh. Nunc at eros eu mi pulvinar posuere. Vestibulum elementum erat luctus vehicula rutrum. Maecenas sed volutpat lectus. Nam id dictum felis, ut mollis nisl. Duis congue quam vel est finibus tempor. Cras mattis nibh id aliquam eleifend. Mauris tristique elit in odio aliquet ultricies. Morbi suscipit iaculis purus et tempus.</p>
+            <p>Curabitur porttitor finibus mattis. Duis nisl orci, commodo sed felis sit amet, consequat mollis tellus. Donec elementum justo eget ante porta, non bibendum felis laoreet. Nam elementum diam in ante tincidunt varius. Duis sollicitudin ornare blandit. Vestibulum bibendum diam facilisis, vulputate ante tincidunt, efficitur nisl. Pellentesque et faucibus sapien, sit amet ornare lorem. Sed a est efficitur, egestas arcu vel, facilisis ligula. Integer nec augue ut odio porttitor finibus. Phasellus rhoncus condimentum placerat. Ut id tempor erat. Sed ut est vel purus ullamcorper molestie. Ut sodales est non rhoncus molestie. Cras mattis condimentum ipsum. Nam enim urna, dignissim vitae tellus at, egestas ornare magna.</p>
+            <p>Cras quis nunc ut tortor eleifend fringilla. Donec tincidunt sapien in enim dapibus, in scelerisque purus posuere. Phasellus aliquam interdum mollis. Aliquam sagittis sed dolor sed tempus. Nunc a semper orci. Curabitur nulla nisl, pellentesque ac volutpat id, volutpat quis neque. Morbi in velit dolor.
+            </p>
+            <p>Nunc eu pellentesque arcu. Cras euismod aliquam urna ut lobortis. In blandit auctor faucibus. Donec et ligula vitae ligula hendrerit sollicitudin ut in erat. Donec id tortor ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dignissim elit sem, id ultricies nulla gravida ut. Sed ut nunc ipsum. Morbi eget dui augue. Etiam a felis non lorem maximus aliquam a eget dui. Vestibulum bibendum sem velit. Ut id rhoncus neque. Donec magna lectus, posuere id mi eget, volutpat varius enim. Fusce consectetur neque metus, vel porttitor nisi faucibus sed. Nam faucibus tortor id sem mattis sollicitudin.</p>
+        </div>
+    </article>
+    <footer> <!-- Define footer width 960px; center enclosed content. -->
+        <p>Copyright © David Kraft</p>
+    </footer>
+    </div>
+<style>
+article p {
+    /* line-height: 200%; */
+    margin-bottom: 12px;
+}
+</style>
 </body>
 </html>

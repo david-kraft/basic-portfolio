@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio | David Kraft’s Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- reset.css resets all browser defaults for uniformity across browsers and platforms --><link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav><!-- Define container width 960px; center enclosed content. Not applied to header because the header needs the white background which is outside of the container. -->
+            <div class="name">
+                <h1><!-- color:#ffffff; font-family: 'Georgia', Times, Times New Roman, serif; background-color:#64a8a4-->David Kraft</h1>
+            </div>
+            <ul> <!-- see https://www.jackreichert.com/2011/07/how-to-add-a-divider-between-menu-items-in-css-using-only-one-selector/ for instructions -->
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="container"><!-- Define article width 960px; center enclosed content. -->
+        <div class="content"><!-- Use this to create padding all around the page-specific content -->
+            <h1>Portfolio</h1>
+            <div class="work">
+                <div class="caption">
+                    <h2>Hangman</h2>
+                </div>
+                <img src="assets/images/hangman.jpg" alt="Hangman" />
+            </div>
+            <div class="work">
+                <div class="caption">
+                    <h2>RPG Game</h2>
+                </div>
+                <img src="assets/images/rpg-game.jpg" alt="RPG Game" />
+            </div>
+            <div class="work">
+                <div class="caption">
+                    <h2>Trivia Game</h2>
+                </div>
+                <img src="assets/images/trivia-game.jpg" alt="Trivia Game" />
+            </div>
+            <div class="work">
+                <div class="caption">
+                    <h2>Rutger’s Info Widget</h2>
+                </div>
+                <img src="assets/images/rutgers-info-widget.jpg" alt="Rutger’s Info Widget" />
+            </div>
+            <div class="work">
+                <div class="caption">
+                    <h2>Rock Paper Scissors</h2>
+                </div>
+                <img src="assets/images/rock-paper-scissors.jpg" alt="Rock Paper Scissors" />
+            </div>
+
+        </div>
+    </article>
+    <footer> <!-- Define footer width 960px; center enclosed content. -->
+        <p>Copyright © David Kraft</p>
+    </footer>
+    </div>
+<style>
+    div.work {
+        display: inline-block;
+        width: 274px;
+        height: 205px;
+        margin: 28px 20px;
+        border: none;
+        position: relative;
+    }
+
+    div.work div.caption{
+        z-index: 2;
+        width: 100%;
+        background-color: #4aaaa5;
+        height: 60px;
+        position: absolute;
+        top: 138px
+    }
+    
+    div.work h2 {
+        color: #ffffff;
+        font-size: 18pt;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    div.work img {
+        z-index: 1;
+    }
+
+
+</style>
+</body>
+</html>
