@@ -42,15 +42,16 @@ header nav div.name h1 {
 
 header nav ul {
     display: inline-block;
-    text-align: right;¸/* I've tried every way I can find to move this to the right and can't get it */
-    vertical-align: middle;
+    float: right;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 header nav ul li {
     display: inline-block;
     color: #4aaaa5;
-    font-size: 14pt;
-    text-align-last: right;
+    font-size: 18pt;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
