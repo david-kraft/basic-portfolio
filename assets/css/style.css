@@ -1,5 +1,6 @@
 body {
     position: relative;
+    /* Background pattern from Subtle Patterns */
     background-image: url(../images/light-veneer.png);
 }
 
@@ -96,7 +97,6 @@ article p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12pt;
     line-height: 200%;
-    /* margin-bottom: 12px; */
     color: #777777;
 }
 
